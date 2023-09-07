@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex-1-js-revision-second</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="parent">
+        <form action="">
+            <fieldset>
+                <legend>Calcul de frais de transport</legend>
+                <div class="mode-con">
+                    <label class="first-label">Mode de transport :</label>
+                    <div class="modes-con">
+                        <div style="display: flex; flex-direction: center; align-items: center; font-size: 13px; gap: 13px;">
+                            <input type="radio" name="mode" id="normal" checked />
+                            <label for="normal">Normal</label>
+                        </div>
+                        <div style="display: flex; flex-direction: center; align-items: center; font-size: 13px; gap: 13px;">
+                            <input type="radio" name="mode" id="express" />
+                            <label for="express" style="margin-right: 7px;">Express</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="dis-con">
+                    <label for="dis">Distance* :</label>
+                    <input type="number" name="dis" id="dis" />
+                </div>
+                <div class="poids-con">
+                    <label for="poids">Poids* :</label>
+                    <input type="number" name="poids" id="poids" />
+                </div>
+                <div class="cout-con">
+                    <label for="cout">Cout total :</label>
+                    <input type="number" name="cout" id="cout" readonly />
+                </div>
+                <div class="buttons">
+                    <button id="calculer" type="button" onclick="calculerFn()">Calculer</button>
+                    <button id="effacer" type="button" onclick="effacerFn()">Effacer</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(221, 221, 221);
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+fieldset {
+    padding: 19px 17px 13px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(152, 212, 243);
+    color: rgb(255, 255, 255);
+}
+
+fieldset legend {
+    color: rgb(128, 128, 128);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    word-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+input[type="radio"],
+input[type="radio"] + label {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+input[id="express"] {
+    margin-left: 13px;
+}
+
+.mode-con {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.first-label {
+    margin-bottom: 0px;
+    margin-left: 9px;
+}
+
+.modes-con {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+
+
+
+label[for="dis"],
+label[for="poids"],
+label[for="cout"] {
+    display: inline-block;
+    width: fit-content;
+    margin-left: 9px;
+    margin-bottom: 7px;
+}
+
+button {
+    cursor: pointer;
+    padding: 9px 13px;
+    border: none;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+}
+
+#calculer {
+    background-color: rgb(255, 165, 0);
+    margin-right: 13px;
+}
+
+#effacer {
+    background-color: rgb(128, 128, 128);
+}
+
+#calculer:hover,
+#effacer:hover {
+    font-size: 15px;
+    transition: 100ms;
+}
+
+.buttons {
+    text-align: center;
+}
+
+
+.cout-con,
+.mode-con {
+    margin-bottom: 19px;
+}
+
+
+.dis-con,
+.poids-con {
+    margin-bottom: 9px;
+}
+
+.mode-con {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+}
+
+.dis-con,
+.poids-con,
+.cout-con {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+input[type="number"] {
+    border: none;
+    outline: 0px;
+    width: fit-content;
+    height: 33px;
+    border-radius: 13px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#cout {
+    background-color: rgb(238, 238, 238);
+}
+
+input[id="dis"]:focus,
+input[id="poids"]:focus {
+    border: 2px solid #218bff;
+}
+
+
+
+@media (max-width: 415px) {
+    .mode-con {
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 19px;
+    };
+
+    .modes-con {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #normal {
+        margin-left: 7px;
+    }
+
+    form {
+        width: 70%
+    }
+
+};
